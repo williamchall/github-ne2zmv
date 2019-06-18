@@ -16,11 +16,11 @@ export class ColorFormComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   doAddColor() {
     console.log('color input:  ', this.color.value);
     this.submitColor.emit(this.color.value)
-this.color.setValue('');
+    this.color.setValue('');
   }
 
 }
